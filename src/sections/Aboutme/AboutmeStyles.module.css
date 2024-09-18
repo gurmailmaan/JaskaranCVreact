@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.aboutme{
+    width: 65%;
+    
+    font-family: "Lato", sans-serif;
+}
+
+.aboutme h2{
+    font-family: "Montserrat", sans-serif;
+    color: #6256CA;
+    font-size: 64px;
+}
+
+.aboutme a{
+    padding: 10px;
+    background-color: #86D293;
+    color: white;
+    border-radius: 5px;
+}
+
