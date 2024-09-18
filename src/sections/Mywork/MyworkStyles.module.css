@@ -1,0 +1,72 @@
+.myworkcontainer{
+    background-color: #6256CA;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    text-align: center;
+    color: #FDFAD9;
+    padding-bottom: 100px;
+}
+
+h1{
+    padding: 30px 0 30px 0;
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  
+    img {
+      align-self: center;
+      background-color: var(--project-card-bg);
+      margin-bottom: 0;
+      height: 200px;
+      width: 350px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  
+    a {
+      /* width: fit-content; */
+      text-decoration: none;
+      color: #FDFAD9;
+      transition: transform 200ms ease-in-out;
+    }
+  
+    a:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .projectsContainer h3{
+    background-color: #7B70E1;
+    padding: 20px ;
+    margin-top: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+
+  @media (width >= 800px) {
+    .projectsContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* justify-content: space-evenly; */
+      padding: 0 30px;
+    }
+  }
+  

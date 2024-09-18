@@ -1,13 +1,17 @@
 .container{
     display: flex;
-    padding: 40px;
+    justify-content: space-between;
     overflow: hidden;
+    height: 100vh;
+    padding:0 0 0 40px;
 }
 
 .aboutme{
+    padding: 40px;              
     width: 65%;
-    
     font-family: "Lato", sans-serif;
+    align-items: center;
+    margin: auto 0;
 }
 
 .aboutme h2{
@@ -18,8 +22,64 @@
 
 .aboutme a{
     padding: 10px;
+    font-family: "Lato", sans-serif;
     background-color: #86D293;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
+
 }
 
+.aboutme p{
+    margin-bottom: 50px;
+}
+
+.photo img{
+    height: 100vh;
+   
+}
+
+.photo {
+    background: url(../../assets/img/jassa.jpeg) no-repeat fixed 100%;
+    background-size: contain;
+    width: 40%;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .photo{
+        display: none;
+    }    
+    .aboutme{
+        margin: 0 auto;
+    }    
+    .container{
+        padding: 0;
+        display: block;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        padding: 0;
+        display: block;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    .aboutme h2{
+        font-size: 30px;
+    }
+    .photo{
+        display: none;
+    }
+    .aboutme{
+        margin: 0 auto;
+    }
+
+}

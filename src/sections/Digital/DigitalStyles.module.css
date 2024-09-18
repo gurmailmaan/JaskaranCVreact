@@ -1,0 +1,53 @@
+.container{
+    background-color: #86D293;
+    height: 100vh;
+    color: #FDFAD9;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+
+
+.gradient{
+        width: 50vw;
+        height: 70vh;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: radial-gradient(circle, #6256ca5b 0%, #86D293 50%);
+      }
+      
+
+.gradient h1{
+    margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    .gradient h1{
+        font-size: 50px;
+    }
+    .gradient{
+        width: 70vw;
+        height: 50vh;
+        margin: 0 auto;
+        position: absolute;
+        background: radial-gradient(circle, #6256ca5b 0%, #86D293 50%);
+      }
+}

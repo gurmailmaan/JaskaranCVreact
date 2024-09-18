@@ -1,0 +1,93 @@
+.skillcontainer{
+    max-width: 1400px;
+    margin: 0 auto;
+
+
+    h3{
+        font-family: "Montserrat", sans-serif;
+        color: #6256CA;
+    }
+
+    p, li{
+        font-family: "Lato", sans-serif;
+    }
+}
+
+.websolutions,
+.esolutions,
+.mobilesolutions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.websolutionscontent,
+.mobilesolutionsontent,
+.esolutionscontent{
+    width: calc(40% - 80px);
+    padding: 80px;
+
+    .list{
+        border-left: 2px solid ;
+        
+        li{
+            list-style: none;
+        }
+    }
+    
+}
+
+.websolutionsimage{
+    background: url("../../assets/img/websolutions.svg") no-repeat fixed ;
+    width: 600px;
+    height: 445px;
+    background-position: center;
+    background-size:cover;
+}
+.mobilesolutionsimage{
+    background: url("../../assets/img/mobile.svg") no-repeat fixed ;
+    width: 600px;
+    height: 445px;
+    background-position: center;
+    background-size: cover;
+}
+.esolutionsimage{
+    background: url("../../assets/img/esolutions.svg") no-repeat fixed ;
+    width: 600px;
+    height: 445px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:450px){
+    .websolutions,
+    .esolutions,
+    .mobilesolutions{
+    display: block;
+    }
+    .websolutionscontent,
+    .mobilesolutionsontent,
+    .esolutionscontent{
+    width: 70vw;
+    padding: 80px;
+
+    .list{
+        border-left: 2px solid ;
+        
+        li{
+            list-style: none;
+        }
+    }
+    
+    }
+    .skillcontainer p{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .websolutionsimage,
+    .mobilesolutionsimage,
+    .esolutionsimage{
+        height: 50vh;
+        width: 100vw;
+    }
+}

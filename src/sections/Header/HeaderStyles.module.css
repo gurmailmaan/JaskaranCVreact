@@ -1,8 +1,10 @@
 .headercontainer{
     background-color: #6256CA;
-    height: 100vh;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     font-family: "Lato", sans-serif;
+    position:relative;
+    padding: 0 40px 0 40px;
+    height: 100vh;
 }
 
 .nav{
@@ -25,19 +27,23 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: calc(100vw - 160px);
 }
 
 .icon img{
-    width: 30px;
+    width: 20px;
 }
 
 .icon{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
-   margin-top: 70px;
+   margin-top: 40px;
    padding-left: 20px;
 }
 
@@ -58,4 +64,61 @@
 
 .hello p{
     margin-top: 0;
+}
+
+.hello span{
+    color:#C1E2A4;
+    font-weight: bold;
+}
+
+
+.hello h1 {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: 30px;
+    margin-top: 5px; */
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 12px); }
+    100%{ transform: translate(0, -0px); }    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .headercontainer{
+        padding: 0px;
+        position: relative;
+        height:100vh;
+    }
+    .hello h1{
+        font-size: 70px;
+    }
+    .hello p{
+        font-size: 16px;
+    }
+    .navbar {
+        display: none;
+    }
+    .hello p{
+        text-align: center;
+    }
+    .icon{
+        position: absolute;
+        right:10%;
+        bottom: 80%;
+        display: none;
+    }
+    .hellocontainer{
+        width: calc(100vw - 40px);
+    }
 }
