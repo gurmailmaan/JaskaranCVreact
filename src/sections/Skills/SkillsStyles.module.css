@@ -1,15 +1,24 @@
 .skillcontainer{
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 0 auto;
 
 
     h3{
+        padding-top: 40px;
+        font-size: 40px;
         font-family: "Montserrat", sans-serif;
         color: #6256CA;
     }
 
     p, li{
+        margin: 10px 0 10px 0;
+        font-size: 20px;
         font-family: "Lato", sans-serif;
+        font-weight: 500;
+    }
+
+    p{
+        margin-bottom: 50px;
     }
 }
 
@@ -23,7 +32,7 @@
 .websolutionscontent,
 .mobilesolutionsontent,
 .esolutionscontent{
-    width: calc(40% - 80px);
+    width: calc(50% - 80px);
     padding: 80px;
 
     .list{
@@ -38,28 +47,39 @@
 
 .websolutionsimage{
     background: url("../../assets/img/websolutions.svg") no-repeat fixed ;
-    width: 600px;
-    height: 445px;
-    background-position: center;
+    width: 40vw;
+    height: 75vh;
+    background-position: left;
     background-size:cover;
 }
 .mobilesolutionsimage{
     background: url("../../assets/img/mobile.svg") no-repeat fixed ;
-    width: 600px;
-    height: 445px;
+    width: 40vw;
+    height: 75vh;
     background-position: center;
     background-size: cover;
 }
 .esolutionsimage{
     background: url("../../assets/img/esolutions.svg") no-repeat fixed ;
-    width: 600px;
-    height: 445px;
+    width: 40vw;
+    height: 75vh;
     background-position: center;
     background-size: cover;
 }
 
-
+@media screen and (max-width:850px){
+    .skillcontainer p,
+    .skillcontainer li{
+        font-size: 16px;
+    }
+    .skillcontainer h3{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width:450px){
+    .skillcontainer{
+        height: fit-content;
+    }
     .websolutions,
     .esolutions,
     .mobilesolutions{
@@ -69,7 +89,7 @@
     .mobilesolutionsontent,
     .esolutionscontent{
     width: 70vw;
-    padding: 80px;
+    padding: 40px;
 
     .list{
         border-left: 2px solid ;
@@ -89,5 +109,11 @@
     .esolutionsimage{
         height: 50vh;
         width: 100vw;
+    }
+
+    .websolutionsimage,
+    .mobilesolutionsimage,
+    .esolutionsimage{
+        display: none;
     }
 }
