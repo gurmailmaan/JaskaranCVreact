@@ -3,7 +3,7 @@
     justify-content: space-between;
     overflow: hidden;
     height: 100vh;
-    padding:0 0 0 40px;
+    padding:0 80px 0 40px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -27,9 +27,15 @@
     font-family: "Lato", sans-serif;
     background-color: #86D293;
     color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     text-decoration: none;
+    transition-duration: .7s;
 
+}
+.aboutme a:hover{
+    /* background-color: #6256CA; */
+    transition-duration: .7s;
+    box-shadow: inset 7.5em 0 0 0 #6256CA;
 }
 
 .aboutme p{
@@ -42,7 +48,7 @@
 }
 
 .photo {
-    background: url(../../assets/img/jassa.png) no-repeat fixed 100%;
+    background: url(../../assets/img/jassa.png) no-repeat 100%;
     background-size: contain;
     width: 40vw;
     height: 100vh;

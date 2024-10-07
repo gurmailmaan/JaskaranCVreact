@@ -23,6 +23,12 @@ p{
     width: 20px;
     margin: 10px;
     z-index: 5;
+    transition-duration: .2s;
+}
+
+.footersocialicon img:hover{
+    transform: scale(1.3);
+    transition-duration: .2s;
 }
 
 .copyright{ 
@@ -42,4 +48,7 @@ h2:nth-child(2){
     text-decoration: none;
     font-weight: 800;
     color: #FDFAD9;
+}
+.talkwithme a:hover{
+    text-decoration: underline 2px solid #6256CA;
 }

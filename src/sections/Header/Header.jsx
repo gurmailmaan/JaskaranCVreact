@@ -39,7 +39,7 @@ const Header = ({ aboutRef, workRef, contactRef }) => {
         </div>
         <div className={styles.hello}>
           <h1>Hello!</h1>
-          <p>I am a <span>UI/UX designer</span> and I design custom websites to do better online.</p>
+          <p>I am Jaskaran Preet, a <span>UI/UX designer</span> and I design custom websites to do better online.</p>
         </div>
       </div>
     </div>

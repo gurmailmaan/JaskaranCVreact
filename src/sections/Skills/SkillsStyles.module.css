@@ -47,22 +47,22 @@
 
 .websolutionsimage{
     background: url("../../assets/img/websolutions.svg") no-repeat fixed ;
-    width: 40vw;
-    height: 75vh;
+    width: 30vw;
+    height: 70vh;
     background-position: left;
     background-size:cover;
 }
 .mobilesolutionsimage{
     background: url("../../assets/img/mobile.svg") no-repeat fixed ;
-    width: 40vw;
-    height: 75vh;
+    width: 30vw;
+    height: 70vh;
     background-position: center;
     background-size: cover;
 }
 .esolutionsimage{
     background: url("../../assets/img/esolutions.svg") no-repeat fixed ;
-    width: 40vw;
-    height: 75vh;
+    width: 30vw;
+    height: 70vh;
     background-position: center;
     background-size: cover;
 }

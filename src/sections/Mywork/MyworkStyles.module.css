@@ -38,7 +38,6 @@ h1{
       color: #FDFAD9;
       transition: transform 200ms ease-in-out;
     }
-  
     a:hover {
       transform: scale(1.05);
     }
@@ -51,7 +50,7 @@ h1{
     gap: 20px;
     justify-content: center;
   }
-  
+
   .projectsContainer h3{
     background-color: #7B70E1;
     padding: 20px ;

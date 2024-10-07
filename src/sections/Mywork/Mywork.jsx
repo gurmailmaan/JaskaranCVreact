@@ -9,6 +9,7 @@ import project5 from '../../assets/img/project-5.jpg'
 import project6 from '../../assets/img/project-6.jpg'
 import project7 from '../../assets/img/project-7.jpg'
 import project8 from '../../assets/img/project-8.jpg'
+import project9 from '../../assets/img/project-9.png'
 
 const Mywork = () => {
   return (
@@ -22,9 +23,9 @@ const Mywork = () => {
           h3="9on9 Jalfa Games"
         />
         <ProjectCard
-          src={project2}
-          link="https://drive.google.com/file/d/15YwGVuiR5HRMI6Kyb5tmthI1dCSte_fB/view"
-          h3="EV Bikes"
+          src={project9}
+          link="https://www.figma.com/proto/LH6UpxrnHOXF4daDKSJsiy/Untitled?node-id=77-25&node-type=canvas&t=CO9y3jBqpmFeyoLH-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=77%3A25"
+          h3="Gamer's Portfolio"
         />
 
         <ProjectCard
